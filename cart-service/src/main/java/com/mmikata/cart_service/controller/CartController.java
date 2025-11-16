@@ -23,7 +23,7 @@ import java.util.Random;
 public class CartController {
 
     private final CartService cartService;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -47,8 +47,8 @@ public class CartController {
 
         // Call Product Referential to Create a valid CartRequest objects
         log.info("Call Api Product Referential ! ");
-        ProductResponse[] productResponses = webClient.get()
-                .uri("http://localhost:8081/api/products")
+        ProductResponse[] productResponses = webClientBuilder.build().get()
+                .uri("http://product-service/api/products")
                 .retrieve()
                 .bodyToMono(ProductResponse[].class)
                 .block();
