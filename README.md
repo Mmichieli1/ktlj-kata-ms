@@ -45,6 +45,7 @@ The amount of each tax is rounded up to the nearest 5 cents, according to the fo
 
 | Computed Taxe | Taxe imputée |
 |:-------------:|:------------:|
+|     0.95      |     0.95     |
 |     0.99      |     1.00     |
 |     1.00      |     1.00     |
 |     1.01      |     1.05     |
