@@ -60,7 +60,7 @@ public class ProductRepository {
             Product product8 = new Product(8, "Sirop contre la toux", false, Product.ProductType.MEDICINE, BigDecimal.valueOf(4.84));
             Product product9 = new Product(9, "Le livre du Truc", false, Product.ProductType.BOOK, BigDecimal.valueOf(17.35));
             Product product10 = new Product(10, "1 Kg M&Ms", true, Product.ProductType.FOOD, BigDecimal.valueOf(7.43));
-            Product product11 = new Product(11, "", true, Product.ProductType.BOOK, BigDecimal.valueOf(16.27));
+            Product product11 = new Product(11, "Germinal", true, Product.ProductType.BOOK, BigDecimal.valueOf(16.27));
 
             products =  List.of(product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11);
             count++;
